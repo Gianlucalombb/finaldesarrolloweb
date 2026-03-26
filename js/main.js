@@ -1,0 +1,1 @@
+console.log("Proyecto Baztro Mayorista cargado correctamente.");

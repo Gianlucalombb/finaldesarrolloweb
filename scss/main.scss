@@ -1,0 +1,104 @@
+$color-primary: #c48b47;
+$color-primary-dark: #a97130;
+$color-dark: #1f1f1f;
+$color-text: #333333;
+$color-light: #f8f5f0;
+$color-white: #ffffff;
+$color-border: #e6dfd6;
+$shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.08);
+$radius-lg: 24px;
+$radius-md: 18px;
+$transition: all 0.3s ease;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $color-text;
+  background-color: $color-white;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-dark;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.hero {
+  min-height: 88vh;
+  background: linear-gradient(135deg, #f8f5f0 0%, #f3ece3 100%);
+  padding: 80px 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-img {
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+}
+
+.info-card,
+.product-card,
+.feature-box,
+.category-box,
+.contact-box {
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  box-shadow: $shadow-soft;
+  overflow: hidden;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
+.btn-custom {
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: $transition;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    color: $color-white;
+    transform: translateY(-2px);
+  }
+}
+
+.footer-custom {
+  background-color: $color-dark;
+  color: #dddddd;
+  padding: 60px 0 20px;
+}
