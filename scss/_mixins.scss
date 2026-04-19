@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+@mixin button($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: $transition;
+}
+
+@mixin responsive($size) {
+  @if $size == tablet {
+    @media (max-width: 991px) { @content; }
+  }
+  @if $size == mobile {
+    @media (max-width: 767px) { @content; }
+  }
+  @if $size == small {
+    @media (max-width: 575px) { @content; }
+  }
+}
